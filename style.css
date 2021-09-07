@@ -1,0 +1,46 @@
+body {
+	background-color: #282828;
+	color: gray;
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	text-align: center;
+	color: white;
+}
+p {
+	text-align: center;
+	color: lightgray;
+}
+a {
+	color: lightgray;
+}
+h2 {
+	text-align: center;
+	color: lightgray;
+}
+h3 {
+	text-align: center;
+	color: lightgray;
+}
+code {
+  	font-family: Consolas,"courier new";
+  	color: crimson;
+  	background-color: #f1f1f1;
+  	padding: 2px;
+  	font-size: 105%;
+}
+
+.menu {
+	background-color: #04031f;
+	border: 0.5px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+.dlSwitch {
+	justify-self: left;
+}
+.butt {
+	position: absolute;
+	padding-left: 750px;
+}

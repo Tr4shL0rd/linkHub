@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tips</title>
+   <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="menu-left">
+			<a href="../index.html">home</a>
+			<a href="#">tips</a>
+			<a href="../index.html">links</a>
+			<a href="../downloads/index.html">Downloads</a>
+			<a href="../p5/index.html">p5</a>
+		</div>
+		<div class="menu-right">
+			<a href="https://github.com/Tr4shL0rd">My github</a>
+		</div>
+	</div>
+
+
+	<h1>How to Create a Stable Shell!</h1>
+	<h3>Note: only works if target has python!</h3>
+	<p>Once the reverse shell has executed, you type <code>python -c 'import pty; pty.spawn("/bin/bash")'</code> into the targets terminal</p>
+	<p>After that hit <code>CTRL-Z</code></p>
+	<h3>Host Machine</h3>
+	<p>Enter <code>stty raw -echo</code></p>
+	<p>And then enter <code>fg</code></p>
+	<h3>on target</h3>
+	<p>Enter <code>reset</code></p>
+	<p><code>export SHELL=bash</code></p>
+	<p><code>export TERM=xterm-256color</p></code>
+	<p><code>stty rows &#x3C;num&#x3E; columns &#x3C;cols&#x3E; </p></code> 
+</body>
+</html>
