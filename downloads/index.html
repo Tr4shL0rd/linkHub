@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-   	<link rel="stylesheet" href="../style.css">
+	<meta name="viewport" content="width=device-width"/>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
    	<title>Downloads</title>
 </head>
 <body>
@@ -20,21 +22,30 @@
 	</div>
 	
 	
-   <h1>Files To Download!</h1>
-   <div>
-   	<p><img style="vertical-align:middle" src="../assets/py.png" width="30" height="20"><a href="http://ketil.tobiesen.org/pyrevshell.py">python reverse shell</a></p>
-   </div>
-   <div>
-   	<p><img style="vertical-align:middle" src="../assets/php.png" width="20" height="20"><a href="http://ketil.tobiesen.org/rev.php.txt"> php reverse shell</a></p>
-   </div>
-   <div>
-   	<p><img style="vertical-align:middle" src="../assets/bash.png" width="20" height="20"><a href="http://ketil.tobiesen.org/bashshell.sh"> bash reverse shell</a></p>
-   </div>
-   <div>
-   	 <p><img style="vertical-align:middle" src="../assets/bash.png" width="20" height="20"><a href="http://ketil.tobiesen.org/linpeas.sh">linPEAS</a></p>  
-   </div>
+   <h1 class="Header">Files To Download!</h1>
+	<div class="files">
+		<div>
+			<p><img style="vertical-align:middle" src="../assets/py.png" width="30" height="20"><a href="http://ketil.tobiesen.org/pyrevshell.py">python reverse shell</a></p>
+		</div>
+		<div>
+			<p><img style="vertical-align:middle" src="../assets/php.png" width="20" height="20"><a href="http://ketil.tobiesen.org/rev.php.txt"> php reverse shell</a></p>
+		</div>
+		<div>
+			<p><img style="vertical-align:middle" src="../assets/bash.png" width="20" height="20"><a href="http://ketil.tobiesen.org/bashshell.sh"> bash reverse shell</a></p>
+		</div>
+		<div>
+			<p><img style="vertical-align:middle" src="../assets/bash.png" width="20" height="20"><a href="http://ketil.tobiesen.org/linpeas.sh">linPEAS</a></p>  
+		</div>
+	</div>
 
-   <h3 style="color: darkgray">Remember To Change The IP!</h3>
+   <h3 style="color: darkgray" class="Header">Remember To Change The IP!</h3>
 
-
-</body></html>
+   <footer style="align-self: center;">
+		<div id="_but" class="butt" onclick="darkLight()">
+			🌚
+			<!--<span class="dlSwich" title="Switch To Light Mode"><p class="moonSun">🌚</p></span>--><!--🌞-->
+		</div>
+		<script type="text/javascript" src="../assets/scripts/darkLightMode.js"></script>
+	</footer>
+</body>
+</html>
