@@ -15,8 +15,7 @@ var tipsPage = "/tips/index.html";
 var p5Page = "/p5/index.html";
 
 function darkLightHome() {
-  console.log(darkMode);
-  console.log(page());
+
   if (darkMode == true) {
     darkMode = false;
 
@@ -84,10 +83,21 @@ function page() {
   return window.location.pathname;
 }
 
+function icoChanger(moonSun) {
+  icon = document.querySelector("link[rel~='icon']");
+  if (moonSun == "moon") {
+    icon.href = 'assets/imgs/favicon_io/faviconMoon.ico';
+  } else if (moonSun == "sun") {
+    icon.href = 'assets/imgs/favicon_io/faviconSun.ico';
+  }
+
+}
+
 // index (home)
 function homeLight() {
   document.body.style.background = light;
   document.getElementById("_but").innerHTML = moon;
+  icoChanger("sun");
 
   links = document.getElementsByTagName("a");
   header = document.getElementsByClassName("Header");
@@ -100,6 +110,7 @@ function homeLight() {
 function homeDark() {
   document.body.style.background = dark;
   document.getElementById("_but").innerHTML = sun;
+  icoChanger("moon");
 
   links = document.getElementsByTagName("a");
   header = document.getElementsByClassName("Header");
@@ -113,9 +124,9 @@ function homeDark() {
 // index (downloads)
 
 function downloadsLight() {
-  console.log("light");
   document.body.style.background = light;
   document.getElementById("_but").innerHTML = moon;
+  icoChanger("sun");
 
   header = document.getElementsByClassName("Header");
   for (var i = 0; i < header.length; i++) {
@@ -128,9 +139,9 @@ function downloadsLight() {
 }
 
 function downloadsDark() {
-  console.log("dark");
   document.body.style.background = dark;
   document.getElementById("_but").innerHTML = sun;
+  icoChanger("moon");
 
   header = document.getElementsByClassName("Header");
   for (var i = 0; i < header.length; i++) {
@@ -146,19 +157,20 @@ function downloadsDark() {
 function tipsLight() {
   document.body.style.background = light;
   document.getElementById("_but").innerHTML = moon;
+  icoChanger("sun");
 
   codeText = document.getElementsByTagName("code");
   for (var i = 0; i < codeText.length; i++) {
-    console.log("hej");
     codeText[i].style.backgroundColor = darkText;
   }
 }
 function tipsDark() {
   document.body.style.background = dark;
   document.getElementById("_but").innerHTML = sun;
+  icoChanger("moon");
+
   codeText = document.getElementsByTagName("code");
   for (var i = 0; i < codeText.length; i++) {
-    console.log("ass");
     codeText[i].style.backgroundColor = "blue";
   }
 }
@@ -168,6 +180,8 @@ function tipsDark() {
 function p5Light() {
   document.body.style.background = light;
   document.getElementById("_but").innerHTML = moon;
+  icoChanger("sun");
+
   links = document.getElementsByTagName("a");
   for (var i = 6; i < links.length; i++) {
       links[i].style.color = lightText;
@@ -176,6 +190,8 @@ function p5Light() {
 function p5Dark() {
   document.body.style.background = dark;
   document.getElementById("_but").innerHTML = sun;
+  icoChanger("moon");
+
   links = document.getElementsByTagName("a");
   for (var i = 6; i < links.length; i++) {
       links[i].style.color = darkText;
