@@ -40,7 +40,16 @@ code {
 .dlSwitch {
 	justify-self: left;
 }
+
 .butt {
 	position: absolute;
-	padding-left: 750px;
+	width: 15px;
+	height: 15px;
+	bottom: 0px;
+	right: 1080px;
+	top: 350px;
+	cursor: pointer;	
+}
+.foot {
+	align-self: center;
 }
