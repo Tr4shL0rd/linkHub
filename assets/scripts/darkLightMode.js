@@ -85,10 +85,18 @@ function page() {
 
 function icoChanger(moonSun) {
   icon = document.querySelector("link[rel~='icon']");
-  if (moonSun == "moon") {
-    icon.href = 'assets/imgs/favicon_io/faviconMoon.ico';
-  } else if (moonSun == "sun") {
-    icon.href = 'assets/imgs/favicon_io/faviconSun.ico';
+  var moonIco = "assets/imgs/favicon_io/faviconMoon.ico"
+  var sunIco  = "assets/imgs/favicon_io/faviconSun.ico"
+  
+  if (page() != "/") {
+    moonIco = "../assets/imgs/favicon_io/faviconMoon.ico";
+    sunIco = "../assets/imgs/favicon_io/faviconSun.ico"
+  }
+  
+  if (moonSun.toLowerCase() == "moon") {
+    icon.href = moonIco;
+  } else if (moonSun.toLowerCase() == "sun") {
+    icon.href = sunIco;
   }
 
 }
