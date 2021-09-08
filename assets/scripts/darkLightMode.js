@@ -20,13 +20,12 @@ function darkLightHome() {
   if (darkMode == true) {
     darkMode = false;
 
-    // index (home)
     if (page() == homePage) {
       homeLight();
     }
   } else if (darkMode == false) {
     darkMode = true;
-    // index (home)
+
     if (page() == homePage) {
       homeDark();
     }
