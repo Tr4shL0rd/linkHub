@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "random.dog": "^1.0.7",
+    "requirejs": "^2.3.6"
+  }
+}

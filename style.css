@@ -24,11 +24,11 @@ h3 {
 	color: lightgray;
 }
 code {
-  	font-family: Consolas,"courier new";
-  	color: crimson;
-  	background-color: #f1f1f1;
-  	padding: 2px;
-  	font-size: 105%;
+	font-family: Consolas,"courier new";
+	color: crimson;
+	background-color: #f1f1f1;
+	padding: 2px;
+	font-size: 105%;
 }
 
 .menu {
@@ -51,7 +51,13 @@ code {
 	cursor: pointer;	
 }
 
-
 .foot {
 	align-self: center;
+}
+
+.downMenu {
+	position: relative;
+	top: 0;
+	left:0;
+	z-index: 9;
 }

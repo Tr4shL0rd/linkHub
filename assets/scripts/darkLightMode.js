@@ -179,7 +179,7 @@ function tipsDark() {
 
   codeText = document.getElementsByTagName("code");
   for (var i = 0; i < codeText.length; i++) {
-    codeText[i].style.backgroundColor = "blue";
+    codeText[i].style.backgroundColor = lightText;
   }
 }
 
