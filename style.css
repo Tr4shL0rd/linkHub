@@ -61,3 +61,18 @@ code {
 	left:0;
 	z-index: 9;
 }
+
+.dog-container > img, .dog-container > video {
+	max-height: 400px;
+
+}
+
+.dog-container--loading > img, .dog-container--loading > video {
+	border: 1px solid red;
+	filter: grayscale(90%);
+	transition: filter 1s;
+}
+
+.loadingText {
+	text-align: left;
+}
