@@ -13,7 +13,7 @@
 <body>
 	<div class="menu">
 		<div class="menu-left">
-			<span class="dropdown ms-2">
+			<span class="dropdown">
 				<button
 					class="btn btn-secondary dropdown-toggle btn-sm"
 					type="button"
@@ -50,18 +50,18 @@
 	</div>
 
 	<div class="codeText">
-		<h1>How to Create a Stable Shell!</h1>
-		<h3>Note: only works if target has python!</h3>
-		<p>Once the reverse shell has executed, you type <code>python -c 'import pty; pty.spawn("/bin/bash")'</code> into the targets terminal</p>
-		<p>After that hit <code>CTRL-Z</code></p>
-		<h3>Host Machine</h3>
-		<p>Enter <code>stty raw -echo</code></p>
-		<p>And then enter <code>fg</code></p>
-		<h3>on target</h3>
-		<p>Enter <code>reset</code></p>
-		<p><code>export SHELL=bash</code></p>
-		<p><code>export TERM=xterm-256color</p></code>
-		<p><code>stty rows &#x3C;num&#x3E; columns &#x3C;cols&#x3E; </p></code> 
+		<h1 class="Text">How to Create a Stable Shell!</h1>
+		<h3 class="Text">Note: only works if target has python!</h3>
+		<p class="Text">Once the reverse shell has executed, you type <code class="CodeText">python3 -c 'import pty; pty.spawn("/bin/bash")'</code> into the targets terminal</p>
+		<p class="Text">After that hit <code class="CodeText">CTRL-Z</code></p>
+		<h3 class="Text">Host Machine</h3>
+		<p class="Text">Enter <code class="CodeText">stty raw -echo</code></p>
+		<p class="Text">And then enter <code class="CodeText">fg</code></p>
+		<h3 class="Text">on target</h3>
+		<p class="Text">Enter <code class="CodeText">reset</code></p>
+		<p class="Text"><code class="CodeText">export SHELL=bash</code></p>
+		<p class="Text"><code class="CodeText">export TERM=xterm-256color</p></code>
+		<p class="Text"><code class="CodeText">stty rows &#x3C;num&#x3E; columns &#x3C;cols&#x3E; </p></code> 
 	</div>
 	<footer style="align-self: center;">
 		<div id="_but" class="butt" onclick="darkLightTips()">

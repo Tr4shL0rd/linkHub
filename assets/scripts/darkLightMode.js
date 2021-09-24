@@ -3,8 +3,14 @@ var darkMode = true;
 // Colors
 var dark = "#282828";
 var light = "#f7fff7";
-var lightText = "black";
-var darkText = "lightgray";
+var lightText = "#ffffff";
+var darkText = "black";
+
+var codeBackdropLight  = "#f1f1f1";
+var codeTextColorLight = "#e03a5b";
+
+var codeBackDropDark  = "#d3d3d3";
+var codeTextColorDark = "black"; 
 // Emojies
 var sun = "🌞";
 var moon = "🌚";
@@ -49,15 +55,16 @@ function darkLightDownloads() {
 function darkLightTips() {
   if (darkMode == true) {
     darkMode = false;
-
+    
     if (page() == tipsPage) {
-      downloadsLight();
+      tipsLight();
+      
     }
   } else if (darkMode == false) {
     darkMode = true;
 
     if (page() == tipsPage) {
-      downloadsDark();
+      tipsDark();
     }
   }
 }
@@ -167,19 +174,30 @@ function tipsLight() {
   document.getElementById("_but").innerHTML = moon;
   icoChanger("sun");
 
-  codeText = document.getElementsByTagName("code");
+  var codeText = document.getElementsByClassName("CodeText");
+  var Text = document.getElementsByClassName("Text");
   for (var i = 0; i < codeText.length; i++) {
-    codeText[i].style.backgroundColor = darkText;
+    codeText[i].style.backgroundColor = "lightGrey";//codeBackDropDark;
+    codeText[i].style.color           = codeTextColorLight;
+    
+  }
+  for (var i = 0; i < Text.length; i++) {
+    Text[i].style.color = darkText;
   }
 }
 function tipsDark() {
   document.body.style.background = dark;
   document.getElementById("_but").innerHTML = sun;
   icoChanger("moon");
-
-  codeText = document.getElementsByTagName("code");
+  var codeText = document.getElementsByClassName("CodeText");
+  var Text = document.getElementsByClassName("Text");
+  
   for (var i = 0; i < codeText.length; i++) {
-    codeText[i].style.backgroundColor = lightText;
+    codeText[i].style.backgroundColor = codeBackdropLight;
+    codeText[i].style.color           = codeTextColorLight;
+  }
+  for (var i = 0; i < Text.length; i++) {
+    Text[i].style.color = lightText;
   }
 }
 
